@@ -1,0 +1,6 @@
+exports.Link = require('./Link.js')
+exports.User = require('./User.js')
+exports.Vote = require('./Vote.js')
+exports.Query = require('./Query.js')
+exports.Mutation = require('./Mutation.js')
+exports.Subscription = require('./Subscription')
