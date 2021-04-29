@@ -13,6 +13,9 @@ async function feed(parent, args, ctx) {
     skip,
     take,
     orderBy,
+    include: {
+      votes: true,
+    },
   })
   const total = ctx.prisma.link.count({ where })
   return { links, total }

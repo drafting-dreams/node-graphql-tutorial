@@ -6,6 +6,7 @@ type Link {
   url: String!
   postedBy: User
   votes: [Vote!]!
+  createdAt: DateTime!
 }
 
 type User {
@@ -59,3 +60,5 @@ type Subscription {
   newLink: Link
   newVote: Vote
 }
+
+scalar DateTime
